@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@taglib prefix="locale" uri="http://www.springframework.org/tags" %>
+
 
 <html>
 <head>
@@ -13,7 +16,10 @@
 </head>
 <body>
 
-<h1>CARS</h1>
+<a href="<%=request.getContextPath()%>?locale=en">EN</a>
+<a href="<%=request.getContextPath()%>?locale=ru">RU</a>
+
+<h1><spring:message code="nameTable.cars"/></h1>
 
 <table class="table table-bordered">
     <thead>
@@ -37,6 +43,7 @@
     </tbody>
 </table>
 
+<a href="/hello">See Hello Page</a>
 
 </body>
 </html>

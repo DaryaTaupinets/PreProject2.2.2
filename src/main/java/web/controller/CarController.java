@@ -17,12 +17,10 @@ public class CarController {
     @Autowired
     CarService carService;
 
-    @GetMapping("cars")
+    @GetMapping(value = "cars")
     public String getListCars(Model model) {
         List<Car> carList = carService.getCarList();
         model.addAttribute("carList", carList);
         return "cars";
     }
-
-
 }
