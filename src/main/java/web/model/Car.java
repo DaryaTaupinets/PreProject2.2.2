@@ -26,10 +26,11 @@ public class Car {
     public Car() {
     }
 
-    public Car(String name, int cost, int speed) {
+    public Car(Long id, String name, int cost, int speed) {
         this.name = name;
         this.cost = cost;
         this.speed = speed;
+        this.id = id;
     }
 
     public Long getId() {
