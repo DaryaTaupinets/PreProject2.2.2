@@ -24,10 +24,10 @@
 <table class="table table-bordered">
     <thead>
     <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Cost</th>
-        <th>Speed</th>
+        <th><spring:message code="carId.cars"/></th>
+        <th><spring:message code="carName.cars"/></th>
+        <th><spring:message code="carCost.cars"/></th>
+        <th><spring:message code="carSpeed.cars"/></th>
     </tr>
     </thead>
     <tbody>
